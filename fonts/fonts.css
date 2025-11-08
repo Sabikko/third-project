@@ -1,0 +1,15 @@
+@font-face {
+  font-family: Inter;
+  src: url('./Inter_28pt-Regular.woff') format('woff'),
+  url('./Inter_28pt-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fraunces';
+  src: url('./Fraunces_72pt-Regular.woff') format('woff'),
+  url('./Fraunces_72pt-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
