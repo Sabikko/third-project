@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width initial-scale=1">
-    <link rel="stylesheet" href="./fonts/fonts.css">
-    <link rel="stylesheet" href="./styles/variables.css">
-    <link rel="stylesheet" href="./styles/global.css">
-    <link rel="stylesheet" href="./styles/style.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body class="page">
     <header class="header">
@@ -30,25 +30,56 @@
             <a href="#!" class="header__menu-item-link">Learn</a>
           </li>
         </ul>
-        <ul class="header__menu-action">
-          <li class="menu-action__item">
-            <button class="menu-action__item-button button-link" type="button">
-              <a href="#!" class="menu-action__item-button-link">Sign in</a>
-            </button>
-          </li>
-          <li class="menu-action__item">
-            <button class="menu-action__item-button button-action" type="button">
-              <a href="#!" class="menu-action__item-button-link">Book a demo</a>
-            </button>
-          </li>
-        </ul>
+        <div class="header__block-buttons">
+          <button class="header__button button-link" type="button">
+            <a href="#!" class="header__button-link">Sign in</a>
+          </button>
+          <button class="header__button button-action" type="button">
+            <a href="#!" class="header__button-link">Book a demo</a>
+          </button>
+        </div>
       </nav>
     </header>
     <main class="content">
       <section class="content__greeting">
-
+        <div class="greeting__block-information">
+          <h1 class="greeting__title">Your everyday tasks, automated.</h1>
+          <p class="greeting__description">
+            Whirl lets you design and streamline your everyday tasks and
+            workflows in just a few clicks.
+          </p>
+          <div class="greeting__block-buttons">
+            <button class="greeting__button button-action button" type="button">
+              <a href="#!" class="greeting__button-link button-text">Book a demo</a>
+            </button>
+            <button class="greeting__button button-link button" type="button">
+              <a href="#!" class="greeting__button-link button-text">Learn more</a>
+            </button>
+          </div>
+        </div>
+        <div class="greeting__block-icon">
+          <svg class="greeting__icon" viewBox="0 0 452 422">
+            <use href="./svg/bulletin-board.svg"></use>
+          </svg>
+        </div>
       </section>
-      <section class="content__partners"></section>
+      <section class="content__partners">
+        <p class="partners__text">Trusted by 50,000+ companies</p>
+        <div class="partners__block-logos">
+          <svg class="partners__logo focus" viewBox="0 0 124 33">
+            <use href="./svg/logo-focusfox.svg"></use>
+          </svg>
+          <svg class="partners__logo" viewBox="0 0 159 27">
+            <use href="./svg/logo-nowintech.svg"></use>
+          </svg>
+          <svg class="partners__logo" viewBox="0 0 145 27">
+            <use href="./svg/logo-optimer.svg"></use>
+          </svg>
+          <svg class="partners__logo" viewBox="0 0 117 34">
+            <use href="./svg/logo-carded.svg"></use>
+          </svg>
+        </div>
+      </section>
       <section class="content__advantage"></section>
       <section class="content__features"></section>
       <section class="content__meaning"></section>
@@ -57,8 +88,6 @@
       <section class="content__blog"></section>
       <section class="content__contact"></section>
     </main>
-    <footer class="footer">
-
-    </footer>
+    <footer class="footer"></footer>
   </body>
 </html>

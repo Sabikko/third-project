@@ -36,35 +36,160 @@ img {
   list-style: none;
 }
 
-.header__menu-item-link {
-  font-size: 15px;
-  line-height: 24px; 
+.header__menu-item-link { 
   color: var(--color-text-header);
+  font-size: 15px;
+  line-height: 24px;
 }
 
-.header__menu-action {
+.header__block-buttons {
   display: flex;
   gap: 13px;
   list-style: none;
 }
 
-.menu-action__item-button-link {
-  font-size: 15px;
-  line-height: 24px;
-}
-
-.menu-action__item-button {
+.header__button {
   padding: 6px 20px;
 }
 
-.button-link {
+.header__block-buttons .button-link {
+  border: none;
   color: var(--cyan);
   background-color: transparent;
+  cursor: pointer;
+}
+
+.header__button-link {
+  font-family: Inter, sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+
+
+.header__block-buttons .button-action {
   border: none;
+  color: #fff;
+  background-color: var(--cyan);
+  cursor: pointer;
+}
+
+.content__greeting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 155px;
+}
+
+.greeting__block-information {
+  max-width: 525px;
+}
+
+.greeting__title {
+  margin-bottom: 24px;
+  padding-right: 40px;
+  font-family: 'Fraunces', serif;
+  font-weight: var(--font-weight);
+  font-size: 58px;
+  line-height: 63.8px;
+}
+
+.greeting__description {
+  margin-bottom: 29px;
+  padding-right: 176px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.greeting__block-buttons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 12px;
+}
+
+.button {
+  padding: 8px 32px;
+}
+
+.greeting__button:last-of-type {
+  position: relative;
+  padding: 8px 15px;
+}
+
+.greeting__button:last-of-type::after {
+  content: '';
+  position: absolute;
+  background-image: url('../svg/right-marker.svg');
+  background-size: 10px 18px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 21px;
+  top: 11px;
+  right: -4px;
+}
+
+.button-link {
+  border: none;
+  color: var(--cyan);
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .button-action {
+  border: none;
   color: #fff;
   background-color: var(--cyan);
-  border: none;
+  cursor: pointer;
+}
+
+.button-text {
+  font-family: Inter, sans-serif;
+  font-size: 17px;
+  line-height: 27px;
+  letter-spacing: 0.2px;
+}
+
+.greeting__icon {
+  width: 452px;
+  height: 422px;
+}
+
+.content__partners {
+  padding: 40px 155px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+
+.partners__text {
+  font-size: 24px;
+  line-height: 37.5px;
+}
+
+.partners__block-logos {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.partners__logo:nth-of-type(1) {
+  width: 124px;
+  height: 33px;
+}
+
+.partners__logo:nth-of-type(2) {
+  width: 159px;
+  height: 27px;
+}
+
+.partners__logo:nth-of-type(3) {
+  width: 145px;
+  height: 27px;
+}
+
+.partners__logo:nth-of-type(4) {
+  width: 117px;
+  height: 34px;
 }
