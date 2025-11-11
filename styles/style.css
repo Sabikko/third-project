@@ -301,6 +301,7 @@ img {
 }
 
 .features__item-title {
+  max-width: 360px;
   overflow: hidden;
   color: var(--bright-gray);
   font-family: 'Fraunces', serif;
@@ -309,7 +310,6 @@ img {
   line-height: 25.2px;
   text-overflow: ellipsis;
   white-space: nowrap;
-  max-width: 360px;
 }
 
 .features__block-icon {
@@ -321,4 +321,112 @@ img {
   top: -150px;
   width: 481px;
   height: 479px;
+}
+
+.content__meaning {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 98px;
+  padding: 120px 155px;
+}
+
+.meaning__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  list-style: none;
+}
+
+.meaning__list-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.meaning__list-item:first-of-type {
+  justify-content: end;
+}
+
+.meaning__item-block-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  margin-bottom: 8px;
+}
+
+.meaning__list-item:nth-of-type(2) .meaning__item-icon {
+  width: 36px;
+  height: 40px;
+}
+
+.meaning__list-item:nth-of-type(3) .meaning__item-icon {
+  width: 41px;
+  height: 37px;
+}
+
+.meaning__item-title {
+  margin-bottom: 11px;
+}
+
+.meaning__item-description {
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.content__frame {
+  display: flex;
+  align-items: center;
+  gap: 187px;
+  padding: 80px 155px;
+  background-color: var(--cyan);
+}
+
+.frame__icon {
+  width: 382px;
+  height: 374px;
+}
+
+.frame__title {
+  margin-bottom: 18px;
+  padding-right: 98px;
+  color: #fff;
+}
+
+.frame__description {
+  margin-bottom: 17px;
+  padding-right: 20px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.frame__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 28px;
+  list-style: none;
+}
+
+.frame__list-item {
+  position: relative;
+}
+
+.frame__list-item::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  width: 19px;
+  height: 12px;
+  background-image: url('../svg/list-marker.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.frame__item-text {
+  padding-left: 26px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 21.6px;
 }
