@@ -430,3 +430,111 @@ img {
   font-size: 16px;
   line-height: 21.6px;
 }
+
+.content__tasks {
+  padding: 120px 155px;
+}
+
+.tasks__title {
+  margin-bottom: 18px;
+}
+
+.tasks__description {
+  margin-bottom: 69px;
+  padding-right: 530px;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.tasks__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: baseline;
+  gap: 64px;
+  list-style: none;
+}
+
+.tasks__item-block-image {
+  margin-bottom: 7px;
+}
+
+.tasks__item-title {
+  margin-bottom: 11px;
+}
+
+.tasks__list-item:nth-of-type(1) .tasks__item-block-image {
+  width: 55px;
+  height: 56px;
+}
+
+.tasks__list-item:nth-of-type(2) .tasks__item-block-image {
+  width: 55px;
+  height: 55px;
+}
+.tasks__list-item:nth-of-type(3) .tasks__item-block-image {
+  width: 59px;
+  height: 44px;
+}
+.tasks__list-item:nth-of-type(4) .tasks__item-block-image {
+  width: 50px;
+  height: 48px;
+}
+
+.tasks__item-description {
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.content__blog {
+  padding: 80px 155px;
+  background-color: var(--bg-color-gray);
+}
+
+.blog__block-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.blog__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  list-style: none;
+}
+
+.blog__card-icon {
+  width: 355px;
+  height: 238px;
+}
+
+.blog__card-block-information {
+  padding: 25px;
+}
+
+.blog__card-tag {
+  display: inline-block;
+  margin-bottom: 8px;
+  padding: 3px 13px;
+  color: var(--color-text-blue);
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  background-color: var(--bg-color-blue);
+}
+
+.blog__card-title {
+  margin-bottom: 11px;
+}
+
+.blog__card-description {
+  font-size: 14px;
+  line-height: 19.6px;
+  margin-bottom: 13px;
+}
+
+.blog__card-data {
+  font-size: 12px;
+  line-height: 19.6px;
+}
